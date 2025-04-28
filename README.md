@@ -38,7 +38,7 @@ Module 2 instructions:
 1) Two distinct panels will appear with a modified VT Match Table on the left side and a new analysis table on the left
 2) This module examines the differences in the Destination Program in relation to the Source Program
 3) The VT Match Table in this module elimnated redundant or irrelevant matches and reclassified some match correlators
-4) The new match correlators are seen in the Transform column
+4) The new match tags are seen in the Transform column
      a) True Exact Match: Direct 1 to 1 Function Bytes Match exactly
      b) Instructions: Instruction bytes in a function match exactly
      c) Data: Data bytes in a function match exactly
@@ -47,6 +47,15 @@ Module 2 instructions:
 5) Note that only exact bytes matches and compiler similarity analysis was performed
 6) The analysis table on the right has three columns (Bytes Similarity, Destination Program Address, Compiler Similarity)
 7) How to interpret the Bytes Similarity column
-     a)  
-8) How to interpret the Destination Program Address column
-9) How to interpret the Compiler Similarity column
+     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the              Source Program
+     b) The color scheme represents the new tag assigned to a bytes-related match found at that address seen in the same row          in the middle column
+             i) Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
+             ii) Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
+             iii) Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
+             iv) Gray: Ignore (No bytes-related tag has been applied to that address)
+9) How to interpret the Destination Program Address column
+10) How to interpret the Compiler Similarity column
+     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the              Source Program
+     b) Gray cells can be ignored since no compiler matches were found at those addresses
+     c) Purple cells indicate a compiler match was found at that address
+    
