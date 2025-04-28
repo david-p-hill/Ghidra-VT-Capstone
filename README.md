@@ -60,10 +60,9 @@ Module 2 instructions:
              ii) White: Match found appears at same address in Source Program
              iii) Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
              iv) Blue: Match found appears later than match found in Source Program (Can indicate added code)
-             v) Strength of Red and Blue indicates how large the difference in addresses are where darker shades mean large                   differences in addresses in the Source and Destination Programs for a given match
+             v) Strength of Red and Blue indicates how large the difference in addresses are where darker shades mean larger                  differences in addresses in the Source and Destination Programs for a given match
 10) How to interpret the Compiler Similarity column
      a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the              Source Program
      b) Gray cells can be ignored since no compiler matches were found at those addresses
      c) Purple cells indicate a compiler match was found at that address
      d) The shade of purple indicates the similarity score of the compiler correlator where light purple corresponds to a             similarity score of 1 and any darker shade is a similarity score that is less than 1
-    
