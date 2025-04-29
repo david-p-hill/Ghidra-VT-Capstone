@@ -11,7 +11,7 @@ How to import the plugin:
 How to navigate the plugin:
 1) Select the three bars icon (leftmost in the set of three) in the top right corner to select a VT Session
 2) When prompted, select a VT Session file indicated with the blue footprints icon
-   * You can only select a VT Session in the current project folder directory
+   * A VT Session can only be selected from the current project folder directory
    * If multiple VT Sessions exist in a project folder, then choose one
 3) Select the refresh icon (middle in the set of three) to enter Module 1
    * See Module 1 instructions below
