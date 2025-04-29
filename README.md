@@ -59,12 +59,12 @@ Module 2 instructions:
      1) The value in each row is every unique destination address from the VT Match Table
      2) The color for each address represents whether or not an analyzed match was found at
         that address and where it appears relative to the Source Program
-             - Gray: Ignore (No analyzed match at this address)
-             - White: Match found appears at same address in Source Program
-             - Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
-             - Blue: Match found appears later than match found in Source Program (Can indicate added code)
-             - Strength of Red and Blue indicates how large the difference in addresses are where darker
-                shades mean larger differences in addresses in the Source and Destination Programs for a given match
+        - Gray: Ignore (No analyzed match at this address)
+        - White: Match found appears at same address in Source Program
+        - Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
+        - Blue: Match found appears later than match found in Source Program (Can indicate added code)
+        - Strength of Red and Blue indicates how large the difference in addresses are where darker
+          shades mean larger differences in addresses in the Source and Destination Programs for a given match
 11) How to interpret the Compiler Similarity column
      1)  The value in each row is the address delta of where the match appears in the Destination Program
          as compared to the Source Program
