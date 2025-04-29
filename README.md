@@ -51,19 +51,19 @@ Module 2 instructions:
          in the Destination Program compared to the Source Program
      2) The color scheme represents the new tag assigned to a bytes-related match
         found at that address seen in the same row in the middle column
-             1) Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
-             2) Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
-             3) Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
-             4) Gray: Ignore (No bytes-related tag has been applied to that address)
+             - Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
+             - Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
+             - Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
+             - Gray: Ignore (No bytes-related tag has been applied to that address)
 9) How to interpret the Destination Program Address column
      1) The value in each row is every unique destination address from the VT Match Table
      2) The color for each address represents whether or not an analyzed match was found at
         that address and where it appears relative to the Source Program
-             1) Gray: Ignore (No analyzed match at this address)
-             2) White: Match found appears at same address in Source Program
-             3) Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
-             4) Blue: Match found appears later than match found in Source Program (Can indicate added code)
-             5) Strength of Red and Blue indicates how large the difference in addresses are where darker
+             - Gray: Ignore (No analyzed match at this address)
+             - White: Match found appears at same address in Source Program
+             - Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
+             - Blue: Match found appears later than match found in Source Program (Can indicate added code)
+             - Strength of Red and Blue indicates how large the difference in addresses are where darker
                 shades mean larger differences in addresses in the Source and Destination Programs for a given match
 11) How to interpret the Compiler Similarity column
      1)  The value in each row is the address delta of where the match appears in the Destination Program
