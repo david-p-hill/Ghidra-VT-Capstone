@@ -47,22 +47,22 @@ Module 2 instructions:
 5) Note that only exact bytes matches and compiler similarity analysis was performed
 6) The analysis table on the right has three columns (Bytes Similarity, Destination Program Address, Compiler Similarity)
 7) How to interpret the Bytes Similarity column
-     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the              Source Program
-     b) The color scheme represents the new tag assigned to a bytes-related match found at that address seen in the same row          in the middle column
+     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the Source Program
+     b) The color scheme represents the new tag assigned to a bytes-related match found at that address seen in the same row in the middle column
              i) Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
              ii) Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
              iii) Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
              iv) Gray: Ignore (No bytes-related tag has been applied to that address)
 8) How to interpret the Destination Program Address column
      a) The value in each row is every unique destination address from the VT Match Table
-     b) The color for each address represents whether or not an analyzed match was found at that address and where it appears         relative to the Source Program
+     b) The color for each address represents whether or not an analyzed match was found at that address and where it appears relative to the Source Program
              i) Gray: Ignore (No analyzed match at this address)
              ii) White: Match found appears at same address in Source Program
              iii) Red: Match found appears earlier than match found in Source Program (Can indicate missing code)
              iv) Blue: Match found appears later than match found in Source Program (Can indicate added code)
-             v) Strength of Red and Blue indicates how large the difference in addresses are where darker shades mean larger                  differences in addresses in the Source and Destination Programs for a given match
+             v) Strength of Red and Blue indicates how large the difference in addresses are where darker shades mean larger differences in addresses in the Source and Destination Programs for a given match
 10) How to interpret the Compiler Similarity column
-     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the              Source Program
+     a)  The value in each row is the address delta of where the match appears in the Destination Program compared to the Source Program
      b) Gray cells can be ignored since no compiler matches were found at those addresses
      c) Purple cells indicate a compiler match was found at that address
-     d) The shade of purple indicates the similarity score of the compiler correlator where light purple corresponds to a             similarity score of 1 and any darker shade is a similarity score that is less than 1
+     d) The shade of purple indicates the similarity score of the compiler correlator where light purple corresponds to a similarity score of 1 and any darker shade is a similarity score that is less than 1
