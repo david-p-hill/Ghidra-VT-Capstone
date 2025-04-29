@@ -47,14 +47,14 @@ Module 2 instructions:
 5) Note that only exact bytes matches and compiler similarity analysis was performed
 6) The analysis table on the right has three columns (Bytes Similarity, Destination Program Address, Compiler Similarity)
 7) How to interpret the Bytes Similarity column
-     1)  The value in each row is the address delta of where the match appears
+     1) The value in each row is the address delta of where the match appears
          in the Destination Program compared to the Source Program
      2) The color scheme represents the new tag assigned to a bytes-related match
         found at that address seen in the same row in the middle column
-             - Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
-             - Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
-             - Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
-             - Gray: Ignore (No bytes-related tag has been applied to that address)
+             * Dark Green: True Exact Match (All bytes are the same somewhere in the Source Program)
+             * Dark Yellow: Instructions (Instruction bytes are the same somewhere in the Source Program)
+             * Steel Blue: Data (Data bytes are the same somewhere in the Source Program)
+             * Gray: Ignore (No bytes-related tag has been applied to that address)
 9) How to interpret the Destination Program Address column
      1) The value in each row is every unique destination address from the VT Match Table
      2) The color for each address represents whether or not an analyzed match was found at
